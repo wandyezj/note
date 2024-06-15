@@ -3,14 +3,35 @@
     <metadata>
         <title>Note</title>
     </metadata>
+
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="./index.css" />
     </head>
+
     <body>
         <div>
             <h1>Note</h1>
         </div>
-        <div id="insert"></div>
+
+        <div
+            id="div_edit"
+            style="background-color: rgba(0, 0, 0, 0.1); position: absolute; top: 0%; bottom: 0; left: 0%; right: 0%"
+        >
+            <button id="button_edit_clear" style="float: left; padding: 10px 20px">Clear</button>
+            <button id="button_edit_load" style="float: left; padding: 10px 20px">Load</button>
+
+            <button id="button_edit_save" style="float: right; padding: 10px 20px">Save</button>
+
+            <!-- Text area can contain default markdown configuration, does this require generation of md from json configuration? or should it just show the json? -->
+            <textarea
+                id="textarea_edit"
+                style="position: relative; top: 0%; display: block; margin-left: auto; margin-right: auto"
+                cols="100"
+                rows="80"
+                aria-label="Edit Configuration"
+            >
+            </textarea>
+        </div>
     </body>
 </html>
